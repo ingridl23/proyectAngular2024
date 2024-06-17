@@ -5,11 +5,18 @@
    
    }
    
-   .badge text-bg-warning{
-     
-
+   .table {
+   // display: flex;
+    width: auto;
    }
 
    .clearance{
     border: 2px solid green;
    }
+   .producttitle{
+    font-size: 20px;
+   }
+td{
+    width: 100px;
+}
+ 

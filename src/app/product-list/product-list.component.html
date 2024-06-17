@@ -12,17 +12,18 @@
 </body>
 </html>
 
-<h1> Lista de productos</h1>
+<h1 class="producttitle"> LISTA DE PRODUCTOS</h1>
 <table class="table">
    
-    <thead>
+    <thead >
         <tr>
-         <th>imagen</th>
+         <th>Imagen</th>
           <th>Nombre</th>
           <th>Tipo</th>
            <th>Precio</th>
            <th>Stock</th>
-           <th>tono</th>
+           <th>Tono</th>
+           <th>Compra</th>
         </thead>
         <tbody>
             
@@ -31,7 +32,7 @@
                 <td>{{product.name}}</td>
                 <td>{{product.tipo}}</td>
                 <td>{{product.precio | currency}}</td>
-                <td><span class="badge text-bg-warning" *ngIf="product.stock==0"> sin Stock </span> </td>
+                <td><span class="badge text-bg-warning" *ngIf="product.stock==0"> sin Stock </span>  </td>
 
                 <td>
                     <select>
@@ -42,7 +43,9 @@
                 </select></td>
 
 
-            
+                 <td> <button  (click)="upQuantity(product)">+</button>
+                     <input type="text" [(ngModel)]="product.quantity" (keyup)="ChangeQuantity($event,product)"> 
+                     <button (click)="downQuantity(product)">-</button></td>
             <tr>
                
                 

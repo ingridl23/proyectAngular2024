@@ -9,4 +9,7 @@ tono2:string,
 tono3:string,
 
 clearance:boolean,
+quantity: number,
 }
+
+
