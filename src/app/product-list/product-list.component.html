@@ -1,0 +1,54 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="product-list.component.scss" rel="stylesheet">
+</head>
+<body>
+    
+</body>
+</html>
+
+<h1> Lista de productos</h1>
+<table class="table">
+   
+    <thead>
+        <tr>
+         <th>imagen</th>
+          <th>Nombre</th>
+          <th>Tipo</th>
+           <th>Precio</th>
+           <th>Stock</th>
+           <th>tono</th>
+        </thead>
+        <tbody>
+            
+            <tr *ngFor="let product of products" [ngClass]="{'clearance': product.clearance}">
+                <td ><img class="fotostabla" [src]="product.img" ></td>
+                <td>{{product.name}}</td>
+                <td>{{product.tipo}}</td>
+                <td>{{product.precio | currency}}</td>
+                <td><span class="badge text-bg-warning" *ngIf="product.stock==0"> sin Stock </span> </td>
+
+                <td>
+                    <select>
+                    <option>{{product.tono1}}</option>
+                    <option>{{product.tono2}}</option>
+                    <option>{{product.tono3}}</option>
+
+                </select></td>
+
+
+            
+            <tr>
+               
+                
+         
+          
+         
+
+        </tbody>
+    </table>
