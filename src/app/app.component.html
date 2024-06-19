@@ -1,4 +1,3 @@
-
 <nav class="navbar navbar-expand-lg bg-body-tertiary " >   
 
   <div class="container-fluid" >
@@ -9,10 +8,10 @@
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
       <ul class="navbar-nav me-auto mb-2 mb-lg-0">
         <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="#">HOME</a>
+          <a class="nav-link active" aria-current="page" [routerLink]="['/home']">HOME</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="">ENCUENTRA A UNA CONSULTORA</a>
+          <a class="nav-link" [routerLink]="['/consultant']">ENCUENTRA A UNA CONSULTORA</a>
         </li>
         <li class="nav-item dropdown">
           <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
@@ -29,29 +28,16 @@
       </ul>
       <form class="d-flex" role="search">
         <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-        <button class="btn btn-outline-success" type="submit">BUSCAR</button>
+        <button class="btn btn-outline-success" id="btn-btn-outline-success"type="submit">BUSCAR</button>
       </form>
     </div>
   </div>
 </nav>
 
-<div class="midiv"> 
-
-  <img id="fotomarykayhorizontal"  src="assets/images/mary kay nombre horizontal.jpg">
-</div>
 
 
+ <router-outlet></router-outlet>
 
-
-
-<div class="container">
-   <div class="row">
-    <div class="col-8"> <app-product-list></app-product-list></div>
-    <div class="col-4"> <app-shopping-cart> </app-shopping-cart> </div>
-
-   </div>
-
-
-
-</div>
-<footer> <p>  {{title}}  &copy; 2024 </p></footer>
+ 
+ <footer> <p>  {{title}}  &copy; 2024 </p></footer>
+  

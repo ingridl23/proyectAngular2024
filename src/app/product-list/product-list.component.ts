@@ -83,12 +83,12 @@ if(product.quantity >0){
 }
 
 
-/*ChangeQuantity(event, product:Product):void{
+ChangeQuantity(event: { key: any; preventDefault: () => void; }, product:Product):void{
 
   console.log(event.key);
   event.preventDefault();
 
-}*/
+}
 }
 
   

@@ -5,18 +5,22 @@
    
    }
    
-   .table {
-   // display: flex;
-    width: auto;
+   #table,td {
+    //display: flex;
+    border: 2px solid white;
+    text-align: center;
    }
 
    .clearance{
     border: 2px solid green;
    }
-   .producttitle{
+   .producttitle, .container-tittle{
     font-size: 20px;
+    text-align: center;
+    
    }
 td{
-    width: 100px;
+    width: 120px;
+
 }
  

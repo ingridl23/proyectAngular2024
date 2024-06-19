@@ -12,11 +12,15 @@
 </body>
 </html>
 
-<h1 class="producttitle"> LISTA DE PRODUCTOS</h1>
-<table class="table">
+<div class="container-tittle" class="container-fluid">
+
+    <h1 class="producttitle"> LISTA DE PRODUCTOS</h1>
+</div>
+
+<table id = 'table' class="container-fluid">
    
-    <thead >
-        <tr>
+    <thead  >
+        <tr >
          <th>Imagen</th>
           <th>Nombre</th>
           <th>Tipo</th>
@@ -25,7 +29,7 @@
            <th>Tono</th>
            <th>Compra</th>
         </thead>
-        <tbody>
+        <tbody class="col-6">
             
             <tr *ngFor="let product of products" [ngClass]="{'clearance': product.clearance}">
                 <td ><img class="fotostabla" [src]="product.img" ></td>
@@ -44,7 +48,7 @@
 
 
                  <td> <button  (click)="upQuantity(product)">+</button>
-                     <input type="text" [(ngModel)]="product.quantity" (keyup)="ChangeQuantity($event,product)"> 
+                     <input class="col-3" type="text" [(ngModel)]="product.quantity"   (keyup)="ChangeQuantity($event,product)" > 
                      <button (click)="downQuantity(product)">-</button></td>
             <tr>
                

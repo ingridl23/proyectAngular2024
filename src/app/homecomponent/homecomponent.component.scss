@@ -1,0 +1,81 @@
+
+.midivanimado{
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    padding: auto;
+    animation:cambiaTamanoColor 15s infinite; 
+    background-color: pink;
+  }
+  
+.midiv {
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  padding: auto;
+  background-color: pink;
+}
+
+
+ .carousel-inner {
+ 
+  align-content: center;
+  justify-content: center;
+  margin-top: 150px;
+  margin-left: 200px;
+  margin-bottom: 150px;
+}
+
+  @keyframes cambiaTamanoColor {
+    80%{
+        width: 0%;
+        background-color: pink;
+    }
+    50%{
+        width: 100%;
+      background-color: rgb(255, 176, 246);
+    }
+  
+    100%{
+        width: 0%;
+        background-color: pink;
+    }
+  }
+
+
+
+h1, p{
+  text-align: center;
+}
+
+#container1{
+  margin-top: 100px;
+ 
+}
+
+#imges{
+ 
+ margin-left: 100px;
+ padding: 5px;
+  height: 500px;
+  width: auto;
+  margin-bottom: 40px;
+}
+
+
+#fotomarykayhorizontal{
+    width: 100%;
+    height: auto;
+    margin-bottom: 50px;
+    margin: 55px;
+   
+    
+  }
+
+  #divfotosolo{
+    width: 500px;
+    height: auto;
+   margin-left: 400px;
+   margin-bottom: 50px;
+
+  }

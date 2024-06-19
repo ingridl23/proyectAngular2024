@@ -7,13 +7,15 @@ import { ProductListComponent } from './product-list/product-list.component';
 import { ShoppingCartComponent } from './shopping-cart/shopping-cart.component';
 import { ConsultantMarykayComponent } from './consultant-marykay/consultant-marykay.component';
 import { FormsModule } from '@angular/forms';
+import { HomecomponentComponent } from './homecomponent/homecomponent.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     ProductListComponent,
     ShoppingCartComponent,
-    ConsultantMarykayComponent
+    ConsultantMarykayComponent,
+    HomecomponentComponent
   ],
   imports: [
     BrowserModule,

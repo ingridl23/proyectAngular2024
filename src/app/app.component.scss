@@ -1,34 +1,7 @@
-.midiv{
-  display: flex;
-  align-content: center;
-  justify-content: center;
-  padding: auto;
-  //animation:cambiaTamanoColor 10s infinite; 
-}
 
-@keyframes cambiaTamanoColor {
-  10%{
-      width: 0%;
-      background-color: pink;
-  }
-  50%{
-      width: 100%;
-    background-color: rgb(254, 119, 104);
-  }
 
-  100%{
-      width: 0%;
-      background-color: pink;
-  }
-}
 
-#fotomarykayhorizontal{
-  width: 100%;
-  height: auto;
-  margin-bottom: 50px;
-  margin: 55px;
-  
-}
+
 
 footer, p{
   background: linear-gradient( top/left/right/bottom/#ff7893,#f870b6);
@@ -37,5 +10,16 @@ footer, p{
   text-align: center;
   align-items: center;
   font-size: 40px
+}
+
+nav{
+  margin: 0;
+  padding: 0;
+  border: 1px solid rgb(207, 149, 158);
+}
+
+
+#btn-btn-outline-success{
+  border: 2px solid rgb(255, 183, 195);
 }
 
