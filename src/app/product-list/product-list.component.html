@@ -50,6 +50,8 @@
                  <td> <button  (click)="upQuantity(product)">+</button>
                      <input class="col-3" type="text" [(ngModel)]="product.quantity"   (keyup)="ChangeQuantity($event,product)" > 
                      <button (click)="downQuantity(product)">-</button></td>
+
+                    <td>  <button  (click)="addToCart(product)"> comprar</button></td>
             <tr>
                
                 

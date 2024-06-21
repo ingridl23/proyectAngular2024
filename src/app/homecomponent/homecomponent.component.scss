@@ -54,9 +54,9 @@ h1, p{
 }
 
 #imges{
- 
- margin-left: 100px;
- padding: 5px;
+  padding: 10px;
+// margin-left: 100px;
+// padding: 5px;
   height: 500px;
   width: auto;
   margin-bottom: 40px;
@@ -75,7 +75,28 @@ h1, p{
   #divfotosolo{
     width: 500px;
     height: auto;
-   margin-left: 400px;
-   margin-bottom: 50px;
+ //  margin-left: 60px;
+    padding: 10px;
+  
 
+  }
+  .col-6{
+    border: 3px solid palevioletred;
+
+  }
+
+
+  #colsolodunoft{
+    align-content: center;
+    align-items: center;
+    text-align: center;
+   margin-left: 350px;
+   margin-bottom: 50px;
+   padding-top: 50px;
+  }
+
+  .row{
+    align-content: center;
+    align-items: center;
+    text-align: center;
   }

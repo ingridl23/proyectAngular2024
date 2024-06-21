@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { Product } from './product';
+import { ProductCartService } from '../product-cart.service';
 
 @Component({
   selector: 'app-product-list',
@@ -58,7 +59,8 @@ export class ProductListComponent {
 
 ];
 
-constructor(){
+
+constructor( private cart: ProductCartService ){
 
 }
 ngOnInit(): void {
@@ -89,7 +91,13 @@ ChangeQuantity(event: { key: any; preventDefault: () => void; }, product:Product
   event.preventDefault();
 
 }
+
+
+  addToCart(product: Product): void{
+    this.cart.addToCart(product);
+  }
+
 }
 
-  
+
 
