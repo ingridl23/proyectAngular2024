@@ -34,17 +34,19 @@
             <tr *ngFor="let product of products" [ngClass]="{'clearance': product.clearance}">
                 <td ><img class="fotostabla" [src]="product.img" ></td>
                 <td>{{product.name}}</td>
-                <td>{{product.tipo}}</td>
+                <td>{{product.type}}</td>
                 <td>{{product.precio | currency}}</td>
                 <td><span class="badge text-bg-warning" *ngIf="product.stock==0"> sin Stock </span>  </td>
 
-                <td>
-                    <select>
-                    <option>{{product.tono1}}</option>
-                    <option>{{product.tono2}}</option>
-                    <option>{{product.tono3}}</option>
-
-                </select></td>
+                <td     >
+                    <label [attr.for]="'tonalidad-' + product.id">Tono</label>
+                    <select [(ngModel)]="product.tonalidadseleccionada" [id]="'tonalidad-'+product.id">
+                       
+                        <option *ngFor="let tonalidad of product.tonalidades" [value]="tonalidad">
+                          {{ tonalidad}}
+                      </option>
+                    </select>
+                  </td>
 
 
                  <td> <button  class="btntable" (click)="upQuantity(product)">+</button>

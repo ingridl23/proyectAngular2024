@@ -5,7 +5,7 @@
    
    }
    
-   #table,td,select {
+   #table,td, select {
     //display: flex;
     border: 2px solid white;
     text-align: center;
@@ -38,4 +38,10 @@ td{
  .btntable, #inputtable{
     background-color:  #f66cb1;
     border-color: #d63384;
+ }
+ select{
+   width: 100%; /* Ajusta según tus necesidades */
+   padding: 8px;
+   margin: 8px 0;
+   box-sizing: border-box;
  }

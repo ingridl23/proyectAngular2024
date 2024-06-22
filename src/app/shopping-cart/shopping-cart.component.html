@@ -4,20 +4,24 @@
 
 
 
+  
+  
+  <div class="row">
+    
     <h1 class="carrito">CARRITO DE COMPRAS</h1>
 
 
+    
+        <ul>
+             <li *ngFor=" let s of( shoppingList$ | async)"> 
+    
+               <p>Producto:  {{s.name}}:  Cantidad De Unidades: {{s.quantity}} <span></span> </p> 
+             </li>
+    
+        </ul>
+    
+    </div>
 </div>
-
-
-    <ul>
-         <li *ngFor=" let s of( shoppingList$ | async)"> 
-
-           <p>Producto:  {{s.name}}:  Cantidad De Unidades: {{s.quantity}} </p> 
-         </li>
-
-    </ul>
-
 
 
 

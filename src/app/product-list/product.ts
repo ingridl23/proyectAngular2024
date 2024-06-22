@@ -1,15 +1,15 @@
 export interface Product {
+    id:number,
 name: string ,
-tipo:string,
+type:string,
 precio: number,
 stock:number,
 img:string,
-tono1:string,
-tono2:string,
-tono3:string,
 
 clearance:boolean,
 quantity: number,
+tonalidades: string[];
+tonalidadseleccionada: string;
 }
 
 

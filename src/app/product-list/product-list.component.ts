@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { Product } from './product';
 import { ProductCartService } from '../product-cart.service';
+import { ProductDataService } from '../product-data.service';
 
 @Component({
   selector: 'app-product-list',
@@ -8,19 +9,17 @@ import { ProductCartService } from '../product-cart.service';
   styleUrl: 'product-list.component.scss'
 })
 export class ProductListComponent {
+  products: Product[] =[];
+  /*
+{
 
-  products: Product[] =[
-    {
-
-    
+    id:1,
     name:"labial en barra",
-    tipo:"mate",
+    type:"mate",
     precio:15000,
     stock:5 ,
     img: "assets/images/labiales.jpg", 
-    tono1: "rojo",
-    tono2:"uva",
-    tono3:"rosa",
+    tonalidades: ['Rojo', 'Uva', 'Rosa'] ,
     clearance: false,
     quantity: 0,
 
@@ -28,42 +27,44 @@ export class ProductListComponent {
 
   {
 
-    
+    id:2,
     name:"base correctora",
-    tipo:"liquido mate",
+    type:"liquido mate",
     precio:25000,
     stock:0 ,
     img: "assets/images/base cc cream1.jpg" ,
-    tono1:"claro",
-    tono2:"medio",
-    tono3:"oscuro",
+    tonalidades: ['claro','medio','oscuro],
     clearance:true,
     quantity: 0,
   },
 
   {
 
-    
+    id:3,
     name:"delineador",
-    tipo:"lapiz liquido",
+    type:"lapiz liquido",
     precio:10000,
     stock:100 ,
     img: "assets/images/delineador azul.jpg" ,
-    tono1:"azul",
-    tono2:"negro",
-    tono3:"metal",
+    tonalidades:['azul','negro','metal'];
     clearance:false,
     quantity: 0,
   },
 
 
 ];
+*/
 
+constructor( private cart: ProductCartService , 
+             private productDataservice : ProductDataService ){ //inyecciones de los servicios
 
-constructor( private cart: ProductCartService ){
 
 }
 ngOnInit(): void {
+
+this.productDataservice.getAll()
+.subscribe(products => this.products = products);
+
 
 }
 

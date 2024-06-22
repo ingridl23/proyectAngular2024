@@ -8,6 +8,7 @@ import { ShoppingCartComponent } from './shopping-cart/shopping-cart.component';
 import { ConsultantMarykayComponent } from './consultant-marykay/consultant-marykay.component';
 import { FormsModule } from '@angular/forms';
 import { HomecomponentComponent } from './homecomponent/homecomponent.component';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -20,7 +21,8 @@ import { HomecomponentComponent } from './homecomponent/homecomponent.component'
   imports: [
     BrowserModule,
     AppRoutingModule,
-    FormsModule
+    FormsModule,
+    HttpClientModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
