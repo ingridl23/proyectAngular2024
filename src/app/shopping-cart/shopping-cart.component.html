@@ -1,9 +1,23 @@
 
 
-<div class="container-tittle">
+<div class="container-fluid">
+
+
 
     <h1 class="carrito">CARRITO DE COMPRAS</h1>
+
+
 </div>
+
+
+    <ul>
+         <li *ngFor=" let s of( shoppingList$ | async)"> 
+
+           <p>Producto:  {{s.name}}:  Cantidad De Unidades: {{s.quantity}} </p> 
+         </li>
+
+    </ul>
+
 
 
 

@@ -5,11 +5,13 @@
    
    }
    
-   #table,td {
+   #table,td,select {
     //display: flex;
     border: 2px solid white;
     text-align: center;
+    text-transform: capitalize;
    }
+
 
    .clearance{
     border: 2px solid green;
@@ -21,6 +23,19 @@
    }
 td{
     width: 120px;
+  
 
 }
- 
+ .btntable{
+    text-transform: capitalize;
+     color: #8b124e;
+ }
+
+ #inputtable{
+    text-align: center;
+   
+ }
+ .btntable, #inputtable{
+    background-color:  #f66cb1;
+    border-color: #d63384;
+ }

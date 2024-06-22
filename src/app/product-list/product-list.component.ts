@@ -16,7 +16,7 @@ export class ProductListComponent {
     name:"labial en barra",
     tipo:"mate",
     precio:15000,
-    stock:0 ,
+    stock:5 ,
     img: "assets/images/labiales.jpg", 
     tono1: "rojo",
     tono2:"uva",
@@ -95,6 +95,8 @@ ChangeQuantity(event: { key: any; preventDefault: () => void; }, product:Product
 
   addToCart(product: Product): void{
     this.cart.addToCart(product);
+    product.stock -= product.quantity;
+    product.quantity=0;
   }
 
 }
