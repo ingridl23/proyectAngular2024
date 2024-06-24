@@ -10,6 +10,7 @@ import { NosotrosComponent } from './nosotros/nosotros.component';
 
 import { ContactoComponent } from './contacto/contacto.component';
 import { FormConsultantComponent } from './form-consultant/form-consultant.component';
+import { CatalogeComponent } from './cataloge/cataloge.component';
 
 const routes: Routes = [
  { path:'',
@@ -24,6 +25,7 @@ const routes: Routes = [
   {path: 'contact' , component : ContactoComponent},
   {path:'form consultant', component: FormConsultantComponent},
   {path: 'about us', component: NosotrosComponent},
+  {path:'catalogue', component:CatalogeComponent},
   
 
 
