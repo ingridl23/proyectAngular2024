@@ -9,6 +9,10 @@ import { ConsultantMarykayComponent } from './consultant-marykay/consultant-mary
 import { FormsModule } from '@angular/forms';
 import { HomecomponentComponent } from './homecomponent/homecomponent.component';
 import { HttpClientModule } from '@angular/common/http';
+import { ContactoComponent } from './contacto/contacto.component';
+import { NosotrosComponent } from './nosotros/nosotros.component';
+
+import { FormConsultantComponent } from './form-consultant/form-consultant.component';
 
 @NgModule({
   declarations: [
@@ -16,7 +20,11 @@ import { HttpClientModule } from '@angular/common/http';
     ProductListComponent,
     ShoppingCartComponent,
     ConsultantMarykayComponent,
-    HomecomponentComponent
+    HomecomponentComponent,
+    ContactoComponent,
+    NosotrosComponent,
+ 
+    FormConsultantComponent
   ],
   imports: [
     BrowserModule,

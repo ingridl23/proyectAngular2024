@@ -11,21 +11,21 @@
           <a class="nav-link active" aria-current="page" [routerLink]="['/home']">HOME</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" [routerLink]="['/consultant']">ENCUENTRA A UNA CONSULTORA</a>
+          <a class="nav-link" [routerLink]="['/consultant']">SE UNA CONSULTORA</a>
         </li>
         <li class="nav-item dropdown">
           <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
             ACERCA DE NOSOTROS
           </a>
           <ul class="dropdown-menu">
-            <li><a class="dropdown-item" href="#">CONTACTO</a></li>
-            <li><a class="dropdown-item" href="#">NUESTRA HISTORIA</a></li>
+            <li><a class="dropdown-item" [routerLink]="['/contact']">CONTACTO</a></li>
+            <li><a class="dropdown-item" [routerLink]="['/about us']">ACERCA DE MARYKAY</a></li>
             
-            <li><a class="dropdown-item" href="#">PROPOSITO</a></li>
+            <li><a class="dropdown-item" [routerLink]="['/products']">PRODUCTOS</a></li>
           </ul>
         </li>
         <li class="nav-item">
-          <a class="nav-link" [routerLink]="['/shopping-cart']">CARRITO DE COMPRAS</a>
+          <a class="nav-link" [routerLink]="['/shopping-cart']">CARRITO </a>
         </li>
       </ul>
 
@@ -44,5 +44,45 @@
  <router-outlet></router-outlet>
 
  
- <footer> <p>  {{title}}  &copy; 2024 </p></footer>
+ <footer> 
+  
+  <div class="container-fluid">
+   
+     <div class="row">
+
+       <p  class="col-12">  MARYKAY  &copy; 2024 </p>
+     </div>
+  </div>
+
+
+<div  class="row">
+    
+      <a  id="aa"class="col-2"  href="#">  contacto </a>
+   
+ 
+    
+       <a   id="aa"class="col-2"   href="#" >terminos y condiciones </a>
+  
+    
+       <a  id="aa"class="col-2"  href="#">acerca de marykay</a> 
+    
+
+      
+       <a  id="aa"class="col-2"   href="#"> comprar productos</a>
+   
+
+      
+       <a   id="aa"class="col-2"    href="#">conviertete en consultora </a> 
+    
+
+      
+       <a    id="aa"class="col-2"  href="#">localizador </a>
+      
+</div>
+
+  
+
+
+
+</footer>
   

@@ -3,8 +3,8 @@
 
 
 
-footer, p{
-  background: linear-gradient( top/left/right/bottom/#ff7893,#f870b6);
+footer,p{
+  background-color: palevioletred;
   padding: 10px;
   color: white;
   text-align: center;
@@ -15,7 +15,7 @@ footer, p{
 nav{
   margin: 0;
   padding: 0;
-  border: 1px solid rgb(207, 149, 158);
+  border: 2px solid rgb(207, 149, 158);
 }
 
 
@@ -23,3 +23,9 @@ nav{
   border: 2px solid rgb(255, 183, 195);
 }
 
+#aa{
+  background-color: palevioletred;
+
+  font-size: 20px;
+  color: rgb(241, 184, 214);
+}

@@ -6,6 +6,10 @@ import { ShoppingCartComponent } from './shopping-cart/shopping-cart.component';
 import { ConsultantMarykayComponent } from './consultant-marykay/consultant-marykay.component';
 import { AppComponent } from './app.component';
 import { HomecomponentComponent } from './homecomponent/homecomponent.component';
+import { NosotrosComponent } from './nosotros/nosotros.component';
+
+import { ContactoComponent } from './contacto/contacto.component';
+import { FormConsultantComponent } from './form-consultant/form-consultant.component';
 
 const routes: Routes = [
  { path:'',
@@ -14,9 +18,13 @@ const routes: Routes = [
 },
 
   { path:'products', component : ProductListComponent},
-  {path:'home', component: HomecomponentComponent},
-{  path:'shopping-cart', component : ShoppingCartComponent},
-{path:'consultant', component : ConsultantMarykayComponent},
+  {path:'home', component: HomecomponentComponent}, 
+  { path:'shopping-cart', component : ShoppingCartComponent},
+  {path:'consultant', component : ConsultantMarykayComponent},
+  {path: 'contact' , component : ContactoComponent},
+  {path:'form consultant', component: FormConsultantComponent},
+  {path: 'about us', component: NosotrosComponent},
+  
 
 
   

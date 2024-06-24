@@ -19,12 +19,18 @@
 
  .carousel-inner {
  
-  align-content: center;
-  justify-content: center;
+  
   margin-top: 150px;
-  margin-left: 200px;
+ // margin-left: 100px;
   margin-bottom: 150px;
 }
+
+.carousel-item {
+
+margin-left: 300px;
+}
+
+
 
   @keyframes cambiaTamanoColor {
     80%{
@@ -72,32 +78,40 @@ h1, p{
     
   }
 
-  #divfotosolo{
-    width: 500px;
-    height: auto;
- //  margin-left: 60px;
-    padding: 10px;
+ 
   
 
-  }
+  
   .col-6{
     border: 3px solid palevioletred;
 
   }
 
-
-  #colsolodunoft{
-    align-content: center;
-    align-items: center;
-    text-align: center;
-   margin-left: 350px;
-   margin-bottom: 50px;
-   padding-top: 50px;
+  #buttonhome{
+    width: 100px;
+    height: auto;
+   
+    border-color:  rgb(244, 94, 144);
+    color: aliceblue;
+    margin-top: 2%;
+    margin-bottom: 2%;
   }
+  
 
   .row{
     align-content: center;
     align-items: center;
     text-align: center;
+   
   }
- 
+
+  
+ #imagentelefono{
+  margin-top: 2%;
+  width: 100%;
+  height: auto;
+ }
+ #imagenhome{
+
+  margin-bottom: 5%;
+ }
