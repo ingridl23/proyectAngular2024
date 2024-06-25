@@ -581,22 +581,26 @@
                      <input id="inputtable" type="text" [(ngModel)]="product.quantity"   (keyup)="ChangeQuantity($event,product)" > 
                      <button  class="btntable"(click)="downQuantity(product)">-</button></td>
 
-                    <td>  <button  class="btntable" (click)="addToCart(product)"> comprar</button></td>
+                    <td>  <button  class="btntable" (click)="addToCart(product)"> <img class="img-fluid"  width="50px" src="assets/images/anadir-a-la-cesta.png"></button> <i class="bi bi-basket"></i></td>
                     <tr>
                         
                         
                         
                     </tbody>
                 </table>
+                <br>
+                <br>
+                <br>
                 
          </div>
             
 
-            <app-shopping-cart   class="col-4">  </app-shopping-cart>
+            <app-shopping-cart   class="col-2">  </app-shopping-cart>
            
        
 
               <div class="row">
+
                   <app-cataloge  class="col-12"></app-cataloge>
                 </div>
                 

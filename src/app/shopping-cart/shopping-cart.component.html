@@ -1,4 +1,7 @@
 
+<head>
+  <link href="/your-path-to-uicons/css/uicons-[your-style].css" rel="stylesheet"> <!--load all styles -->
+</head>
 
 <div class="container-fluid">
 
@@ -6,21 +9,39 @@
 
   
   
+ 
+   
+
   <div class="row">
-    
+
     <h1 class="carrito">CARRITO DE COMPRAS</h1>
-
-
+  </div>
+  
+  
+  <table>
+  
+            <thead>
+              <tr>
+                <td> </td>
+                <td>Producto</td>
+                <td>Cantidad</td>
+                <td>Precio</td>
+                <td>Eleccion</td>
+                <td>Subtotal</td>
+  
+              </tr>
+            </thead>
+               <tr *ngFor=" let s of( shoppingList$ | async)"> 
+                 <td> <button (click)="(DeleteTo())"><img img-fluid src="assets/images/basura.png"></button></td>
+                 <td> {{s.name}}</td>
+                 <td>  {{s.quantity}} <span></span> </td > 
+                  <td>{{s.precio}}</td>
+                  <td>{{s.tonalidadseleccionada}}</td>
+             
+             </tr>
+          </table>
     
-        <ul>
-             <li *ngFor=" let s of( shoppingList$ | async)"> 
     
-               <p>Producto:  {{s.name}}:  Cantidad De Unidades: {{s.quantity}} <span></span> </p> 
-             </li>
-    
-        </ul>
-    
-    </div>
 </div>
 
 

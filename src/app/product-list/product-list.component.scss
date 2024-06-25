@@ -31,6 +31,7 @@ td{
  .btntable{
     text-transform: capitalize;
      color: #8b124e;
+     border: 2px solid #d63384;
  }
 
  #inputtable{
@@ -39,7 +40,7 @@ td{
     height: auto;
    
  }
- .btntable, #inputtable{
+  #inputtable{
     background-color:  #f66cb1;
     border-color: #d63384;
  }

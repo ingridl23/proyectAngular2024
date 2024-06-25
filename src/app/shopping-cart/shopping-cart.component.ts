@@ -9,6 +9,9 @@ import { Observable, observable } from 'rxjs';
   styleUrl: './shopping-cart.component.scss'
 })
 export class ShoppingCartComponent implements OnInit {
+DeleteTo() {
+throw new Error('Method not implemented.');
+}
 
   shoppingList$!: Observable<Product[]>;
 constructor(cart: ProductCartService){
