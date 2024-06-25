@@ -35,6 +35,8 @@ td{
 
  #inputtable{
     text-align: center;
+    width: 50px ;
+    height: auto;
    
  }
  .btntable, #inputtable{
@@ -51,4 +53,20 @@ td{
  h1,h2{
    text-align: center;
    margin: 2%;
+ }
+
+ .col-4 {
+   margin-left: 0;
+   margin-right: 0;
+   padding-left: 150px;
+   margin-right: 0%;
+
+ }
+
+ .col-3{
+   margin-left: 0;
+   margin-right: 0;
+   padding-left: 90px;
+   margin-right: 0%;
+
  }
