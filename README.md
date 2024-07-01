@@ -4,8 +4,8 @@
 Durante la cursada del seminario  y siguiendo las indicaciones del curso . Se lleva a  acabo un proyecto en Angular orientado a una pagina web E-commerce sobre productos de belleza.Trabajando y con inspiracion en  la marca "Marykay".
 
 
-## Componentes
-# Los componentes creados  que presenta el proyecto son:
+# Componentes
+## Los componentes creados  que presenta el proyecto son:
 - product-list (Se encuentra la lista de productos y su funcionalidad)
 
 - shopping-cart (Se encuentra el carrito y su funcionalidad)
