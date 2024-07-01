@@ -1,27 +1,54 @@
-# Marykay
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 18.0.3.
+# TRABAJO ESPECIAL SEMINARIO ANGULAR 2024
 
-## Development server
+Durante la cursada del seminario  y siguiendo las indicaciones del curso . Se lleva a  acabo un proyecto en Angular orientado a una pagina web ecommerce sobre productos de belleza. Trabajando y con inspiracion en  la marca "Marykay".
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
 
-## Code scaffolding
+## Componentes
+# Los componentes creados  que presenta el proyecto son:
+- product-list (Se encuentra la lista de productos y su funcionalidad)
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+- shopping-cart (Se encuentra el carrito y su funcionalidad)
 
-## Build
+- form-consultant (Se encuentra el formulario de contacto para el cliente)
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+- contacto  (Se encuentra la informacion de la empresa , datos de contacto de la misma)
 
-## Running unit tests
+- homecomponent  (Pagina principal del sitio)
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+- nosotros  (Slide de la creadora de la empresa)
 
-## Running end-to-end tests
+- consultant-marykay (Se encuentra informacion para redirigir al usuario al formulario de contacto)
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+- catalogue (Se encuentra el catalogo online de productos para descargar en formato PDF)
 
-## Further help
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+
+
+
+
+## Datos Del Alumno :
+
+- Nombre : Ledesma Ingrid Milagros
+
+- Sede :  Tres Arroyos
+
+- Segundo Año De Tudai
+
+- Dni : 46.107.261
+
+- Email : ingridledesma22@gmail.com
+
+## Proyecto En StackBlitz :
+
+-  https://stackblitz.com/~/github.com/ingridl23/proyectAngular2024
+
+
+## Ayuda Para La Instalación
+
+#Instrucciones para instalar el proyecto:
+
+
+1. git clone https://github.com/tuusuario/nombredelproyecto.git
+2. cd tuprojecto
+3. npm install

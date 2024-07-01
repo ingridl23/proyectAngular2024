@@ -32,7 +32,7 @@
               </tr>
             </thead>
                <tr *ngFor=" let s of( shoppingList$ | async)"> 
-                 <td> <button (click)="(DeleteTo())"><img img-fluid src="assets/images/basura.png"></button></td>
+                 <td> <button (click)="DeleteTo(s)"><img img-fluid src="assets/images/basura.png"></button></td>
                  <td> {{s.name}}</td>
                  <td>  {{s.quantity}} <span></span> </td > 
                   <td>{{s.precio}}</td>
