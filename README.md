@@ -50,5 +50,5 @@ Durante la cursada del seminario  y siguiendo las indicaciones del curso . Se ll
 
 
 1. git clone https://github.com/tuusuario/nombredelproyecto.git
-2. cd tuprojecto
+2. cd nombredelprojecto
 3. npm install
