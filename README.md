@@ -1,7 +1,7 @@
 
 # TRABAJO ESPECIAL SEMINARIO ANGULAR 2024
 
-Durante la cursada del seminario  y siguiendo las indicaciones del curso . Se lleva a  acabo un proyecto en Angular orientado a una pagina web ecommerce sobre productos de belleza. Trabajando y con inspiracion en  la marca "Marykay".
+Durante la cursada del seminario  y siguiendo las indicaciones del curso . Se lleva a  acabo un proyecto en Angular orientado a una pagina web E-commerce sobre productos de belleza. Trabajando y con inspiracion en  la marca "Marykay".
 
 
 ## Componentes
