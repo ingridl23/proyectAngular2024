@@ -6,41 +6,30 @@
 <div class="container-fluid">
 
 
-
-  
-  
- 
-   
-
   <div class="row">
 
     <h1 class="carrito">CARRITO DE COMPRAS</h1>
   </div>
   
   
-  <table>
-  
-            <thead>
-              <tr>
-                <td> </td>
-                <td>Producto</td>
-                <td>Cantidad</td>
-                <td>Precio</td>
-                <td>Eleccion</td>
-                <td>Subtotal</td>
-  
-              </tr>
-            </thead>
-               <tr *ngFor=" let s of( shoppingList$ | async)"> 
-                 <td> <button (click)="DeleteTo(s)"><img img-fluid src="assets/images/basura.png"></button></td>
-                 <td> {{s.name}}</td>
-                 <td>  {{s.quantity}} <span></span> </td > 
-                  <td>{{s.precio}}</td>
-                  <td>{{s.tonalidadseleccionada}}</td>
+  <table *ngFor=" let s of( shoppingList$ | async)"  class="col-12">
+
+               <tr > 
+                 <td class="col-2"> {{s.name}}</td>
+                 <td class="col-2">unidad {{s.quantity}}  </td > 
+                  <td class="col-2">tono {{s.tonalidadseleccionada}}</td>
+                  <td class="col-2">precio {{s.precio}}</td>
+                  <td class="col-2"> <button (click)="DeleteTo(s)"><img img-fluid src="assets/images/basura.png"></button></td>
              
              </tr>
+             <tr class="col-12" id="trbuttoncompra">
+               <button class="buttoncompra">Iniciar compra</button>
+            </tr>
+           
+
+             <br>
+             <br>
           </table>
-    
     
 </div>
 
