@@ -46,7 +46,7 @@ Durante la cursada del seminario  y siguiendo las indicaciones del curso . Se ll
 
 ## Ayuda Para La Instalación
 
-#Instrucciones para instalar el proyecto:
+## Instrucciones para instalar el proyecto:
 
 
 1. git clone https://github.com/tuusuario/nombredelproyecto.git
