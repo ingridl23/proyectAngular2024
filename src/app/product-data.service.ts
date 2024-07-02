@@ -11,11 +11,7 @@ const URL= 'https://649b797cbf7c145d023a52d7.mockapi.io/nombres/productos';
   providedIn: 'root'
 })
 export class ProductDataService {
-  DeleteTo(products: Observable<Product[]> | undefined) {
-    throw new Error('Method not implemented.');
-  }
-  shoppingList: any;
-
+  
   constructor(private http : HttpClient) { }
 /*
 consume la api y devuelve un observable a la respuesta

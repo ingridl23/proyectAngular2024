@@ -32,16 +32,15 @@ let  item = this._shoppingList.find((v1) => v1.name.toLowerCase() == product.nam
  this.shoppingList.next(this._shoppingList); //equivalente a emitt de eventos
 }
 
-DeleteTo(product: Product) {
-  const index = this._shoppingList.findIndex((v1) => v1.name.toLowerCase() == product.name.toLowerCase());
+deleteFromCart(product: Product) {
+  const index = this._shoppingList.findIndex((v1) => v1.name.toLowerCase() === product.name.toLowerCase());
 
   if (index > -1) {
-    this._shoppingList.splice(index, 1); // Elimina el producto
+    this._shoppingList.splice(index, 1);
     console.log(this._shoppingList);
-    this.shoppingList.next(this._shoppingList); // Emite los cambios
+    this.shoppingList.next(this._shoppingList);
   }
 }
-
 }
 
 

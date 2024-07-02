@@ -9,19 +9,18 @@ import { Observable, observable } from 'rxjs';
   styleUrl: './shopping-cart.component.scss'
 })
 export class ShoppingCartComponent implements OnInit {
-  productCartService: any;
-DeleteTo(s :Product) {
-  this.productCartService.DeleteTo(s);
-}
 
-  shoppingList$!: Observable<Product[]>;
-constructor(cart: ProductCartService){
-this.shoppingList$= cart.shoppingList.asObservable();
-  //cart.shoppingList.subscribe(c => this.shoppingList = c); //observables (esta linea nos ahorramos errores de subcripcion  y de memoria si se destruye o ocurre algo)s
-}
+  shoppingList$: Observable<Product[]>;
 
-  ngOnInit(): void {
-    throw new Error('Method not implemented.');
+  constructor(private cartService: ProductCartService) {
+    this.shoppingList$ = this.cartService.shoppingList.asObservable();
   }
+
+  ngOnInit(): void {}
+
+  removeFromCart(product: Product): void {
+    this.cartService.deleteFromCart(product);
+  }
+
 
 }
