@@ -4,7 +4,7 @@
     
            <div class="container-fluid">
                
-               <form  action="login">
+               <form  action="login"(ngSubmit)="onSubmit(form.value)" #form="ngForm">
     
                  <div class="divh2">
                      
@@ -13,19 +13,19 @@
                      <div  class="input-wrapper" > 
     
                         <label>Nombre: </label>
-                        <input type="text" name="nombre" placeholder="Nombre" required="required" class>
+                        <input type="text" name="nombre" placeholder="Nombre" required="required" class ngModel>
                      </div>
     
                      <div  class="input-wrapper" >
     
                          <label>Apellido: </label>
-                         <input type="text" name="apellido" placeholder="Apellido" required="required" class>
+                         <input type="text" name="apellido" placeholder="Apellido" required="required" class ngModel>
                      </div>
     
                      <div  class="input-wrapper">
     
                          <label>Correo: </label>
-                         <input type="email" name="correo" placeholder="Correo" required="required" class>
+                         <input type="email" name="correo" placeholder="Correo" required="required" class  ngModel>
                      </div>
     
                      <div class="input-wrapper">
@@ -33,9 +33,9 @@
                          <label>Pais : </label>
                     
     
-                         <select  placeholder="pais" name="pais" required="required" class>
+                         <select  placeholder="pais" name="pais" required="required" class ngModel>
     
-                             <option value="Argentina">Argentina</option>
+                             <option value="Argentina">Argentina  </option>
                              <option value="Brasil">Brasil</option>
                              <option value="Chile">Chile</option>
                              <option value="Colombia">Colombia</option>
